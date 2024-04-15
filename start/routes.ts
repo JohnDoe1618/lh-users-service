@@ -13,8 +13,10 @@ router.get('/', async () => {
     return {
         hello: 'world',
     }
-});
+})
 
-router.group(() => {
-    router.post('/create', '#controllers/users_controller.store');
-}).prefix('/users');
+router
+    .group(() => {
+        router.post('/create', '#controllers/users_controller.store')
+    })
+    .prefix('/users')
