@@ -1,4 +1,4 @@
-import { Database } from '@adonisjs/lucid/database';
+import { Database } from '@adonisjs/lucid/database'
 import vine from '@vinejs/vine'
 
 export const validBodyUser = vine.compile(
